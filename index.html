@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel do Corte ✂️💈</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+            font-family: 'Segoe UI', sans-serif;
+            padding: 0.8rem;
+        }
 
+        .tela {
+            max-width: 420px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* 🏆 1ª MOLDURA — CIMA */
+        .caixa-topo {
+            background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+            border-radius: 24px;
+            padding: 1.5rem 1.2rem;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+        }
+        .destaque-gratis {
+            background: #000;
+            color: #d4af37;
+            padding: 0.8rem 1.2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .texto-principal {
+            color: #2a2a2a;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+        .local {
+            color: #000;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        /* 💬 2ª MOLDURA — NO MEIO = BOTÃO */
+        .caixa-botao {
+            background: #000;
+            border-radius: 24px;
+            padding: 1.5rem 1.2rem;
+            text-align: center;
+            border: 3px solid #d4af37;
+        }
+        .nome {
+            color: #d4af37;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .chamada {
+            color: #ddd;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.3rem;
+        }
+        .botao-chat {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+        .botao-chat:hover {
+            transform: scale(1.05);
+        }
+
+        /* 🖼️ 3ª MOLDURA — EMBAIXO = FOTO */
+        .caixa-foto {
+            border-radius: 24px;
+            overflow: hidden;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+        }
+        .caixa-foto img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tela">
+        <!-- 🏆 1ª — CIMA: Texto -->
+        <div class="caixa-topo">
+            <div class="destaque-gratis">🎉 CORTES TOTALMENTE GRATUITOS!</div>
+            <p class="texto-principal">
+                Estou começando por agora bem aqui no bairro!<br>
+                Venha fazer seu corte com qualidade e estilo!
+            </p>
+            <p class="local">📍 Rua Quatro — Bem na esquina!</p>
+        </div>
+
+        <!-- 💬 2ª — MEIO: Nome + Chamada + BOTÃO VERDE -->
+        <div class="caixa-botao">
+            <h2 class="nome">Gabriel do Corte</h2>
+            <p class="chamada">
+                ✂️ As vagas são limitadas! Garanta já o seu horário.<br>
+                Clique no botão abaixo, entre no chat e agende o seu atendimento. 💈✨
+            </p>
+            <a href="chat.html" class="botao-chat">💬 Conversar agora</a>
+        </div>
+
+        <!-- 🖼️ 3ª — EMBAIXO: Foto -->
+        <div class="caixa-foto">
+            <img 
+                src="https://raw.githubusercontent.com/wwwillweb777-ctrl/Fotos-Gabriel-do-corte/main/logo.webp" 
+                alt="Gabriel do Corte — Atendimento"
+                loading="lazy">
+        </div>
+    </div>
+
+</body>
+</html>
